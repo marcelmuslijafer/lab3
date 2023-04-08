@@ -14,6 +14,7 @@ public class Coach extends Person {
 
     public Coach(String name, String country, int emotion, int coachingSkill, Formation formation) {
         super(name, country, emotion);
+        this.coachingSkill = 50;
         setCoachingSkill(coachingSkill);
         this.formation = formation;
     }
