@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bebf0dec-2eef-41cc-9cfb-d09b635b8a9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hr/fer/oop/lab3/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hr/fer/oop/lab3/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hr/fer/oop/lab3/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hr/fer/oop/lab3/Coach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hr/fer/oop/lab3/FootballPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hr/fer/oop/lab3/FootballPlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680941674467</updated>
-      <workItem from="1680941676357" duration="1760000" />
+      <workItem from="1680941676357" duration="2990000" />
     </task>
     <servers />
   </component>
