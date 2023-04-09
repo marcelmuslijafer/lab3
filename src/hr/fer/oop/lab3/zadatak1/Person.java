@@ -1,4 +1,4 @@
-package hr.fer.oop.lab3;
+package hr.fer.oop.lab3.zadatak1;
 
 import java.util.Objects;
 
