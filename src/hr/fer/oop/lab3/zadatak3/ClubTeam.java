@@ -15,13 +15,13 @@ public class ClubTeam extends Team {
     private static final int REGISTERED_CAPACITY = 25;
 
     /**
-     * Coefficient that is multiplied with players' skill when
+     * Coefficient that is multiplied with a player's skill when
      * calculating club's rating.
      */
     private static final double RATING_SKILL_COEFFICIENT = 0.7;
 
     /**
-     * Coefficient that is multiplied with players' emotion when
+     * Coefficient that is multiplied with a player's emotion when
      * calculating club's rating.
      */
     private static final double RATING_EMOTION_COEFFICIENT = 0.3;

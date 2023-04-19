@@ -109,14 +109,12 @@ public abstract class Team implements ManageableTeam {
     }
 
     /**
-     * TODO: Add javadoc
-     * @return
+     * @return coefficient used for calculating rating
      */
-    public abstract double getSkillCoefficient();
+    protected abstract double getSkillCoefficient();
 
     /**
-     * TODO: Add javadoc
-     * @return
+     * @return coefficient used for calculating rating
      */
-    public abstract double getEmotionCoefficient();
+    protected abstract double getEmotionCoefficient();
 }
