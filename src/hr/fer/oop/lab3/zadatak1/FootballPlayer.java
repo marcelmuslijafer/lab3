@@ -56,7 +56,7 @@ public class FootballPlayer extends Person {
      */
     public void setPlayingSkill(int playingSkill) {
         if (playingSkill < 0 || playingSkill > 100) {
-            System.out.println("Cannot set playingSkill to: " + playingSkill);
+            System.out.println("Cannot set playing skill to: " + playingSkill);
             return;
         }
         this.playingSkill = playingSkill;

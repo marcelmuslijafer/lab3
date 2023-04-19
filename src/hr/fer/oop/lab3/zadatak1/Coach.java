@@ -55,7 +55,7 @@ public class Coach extends Person {
      */
     public void setCoachingSkill(int coachingSkill) {
         if (coachingSkill < 0 || coachingSkill > 100) {
-            System.out.println("Cannot set coachingSkill to: " + coachingSkill);
+            System.out.println("Cannot set coaching skill to: " + coachingSkill);
             return;
         }
         this.coachingSkill = coachingSkill;
