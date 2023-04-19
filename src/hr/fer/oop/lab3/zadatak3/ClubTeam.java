@@ -49,4 +49,22 @@ public class ClubTeam extends Team {
         this.reputation = reputation;
     }
 
+    /**
+     * @return club's reputation
+     */
+    public int getReputation() {
+        return reputation;
+    }
+
+    /**
+     * Sets the club's reputation.
+     * @param reputation reputation value, must be in [0, 100]
+     */
+    public void setReputation(int reputation) {
+        if (reputation < 0 || reputation > 100) {
+            System.out.println("Cannot set reputation to: " + reputation);
+            return;
+        }
+        this.reputation = reputation;
+    }
 }
