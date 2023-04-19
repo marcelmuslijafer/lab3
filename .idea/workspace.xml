@@ -7,7 +7,6 @@
     <list default="true" id="bebf0dec-2eef-41cc-9cfb-d09b635b8a9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hr/fer/oop/lab3/zadatak1/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hr/fer/oop/lab3/zadatak1/Coach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hr/fer/oop/lab3/zadatak1/Formation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hr/fer/oop/lab3/zadatak1/Formation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <workItem from="1681230930807" duration="747000" />
       <workItem from="1681312326826" duration="1620000" />
       <workItem from="1681900388708" duration="6158000" />
-      <workItem from="1681929043247" duration="3429000" />
+      <workItem from="1681929043247" duration="3468000" />
     </task>
     <servers />
   </component>

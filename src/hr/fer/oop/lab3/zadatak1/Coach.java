@@ -6,7 +6,7 @@ import hr.fer.oop.lab3.zadatak3.ManageableTeam;
 import hr.fer.oop.lab3.zadatak4.Manager;
 
 /**
- * Class that describes a Coach.
+ * Class that describes a coach.
  */
 public class Coach extends Person implements Manager {
 
