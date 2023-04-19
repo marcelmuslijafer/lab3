@@ -108,7 +108,15 @@ public abstract class Team implements ManageableTeam {
         this.formation = formation;
     }
 
+    /**
+     * TODO: Add javadoc
+     * @return
+     */
     public abstract double getSkillCoefficient();
 
+    /**
+     * TODO: Add javadoc
+     * @return
+     */
     public abstract double getEmotionCoefficient();
 }
