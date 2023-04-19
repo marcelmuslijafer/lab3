@@ -1,6 +1,8 @@
 package hr.fer.oop.lab3.zadatak3;
 
+import hr.fer.oop.lab3.zadatak1.FootballPlayer;
 import hr.fer.oop.lab3.zadatak1.Formation;
+import hr.fer.oop.lab3.zadatak2.SimpleFootballPlayerCollection;
 
 /**
  * Class that describes a football club.
@@ -11,6 +13,18 @@ public class ClubTeam extends Team {
      * A football club can't have more than 25 players registered.
      */
     private static final int REGISTERED_CAPACITY = 25;
+
+    /**
+     * Coefficient that is multiplied with players' skill when
+     * calculating club's rating.
+     */
+    private static final double RATING_SKILL_COEFFICIENT = 0.7;
+
+    /**
+     * Coefficient that is multiplied with players' emotion when
+     * calculating club's rating.
+     */
+    private static final double RATING_EMOTION_COEFFICIENT = 0.3;
 
     /**
      * Football club's reputation.
@@ -47,6 +61,24 @@ public class ClubTeam extends Team {
     public ClubTeam(String name, int reputation, Formation formation) {
         super(name, REGISTERED_CAPACITY, formation);
         this.reputation = reputation;
+    }
+
+    @Override
+    public boolean registerPlayer(FootballPlayer player) {
+        if (player.getPlayingSkill() < reputation)
+            return false;
+
+        return registeredPlayers.add(player);
+    }
+
+    @Override
+    public double getSkillCoefficient() {
+        return RATING_SKILL_COEFFICIENT;
+    }
+
+    @Override
+    public double getEmotionCoefficient() {
+        return RATING_EMOTION_COEFFICIENT;
     }
 
     /**

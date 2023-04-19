@@ -24,7 +24,7 @@ public abstract class Team implements ManageableTeam {
     /**
      * A collection of players registered in the team.
      */
-    private SimpleFootballPlayerCollection registeredPlayers;
+    protected SimpleFootballPlayerCollection registeredPlayers;
 
     /**
      * The team's starting eleven.
@@ -65,6 +65,17 @@ public abstract class Team implements ManageableTeam {
     }
 
     @Override
+    public double calculateRating() {
+        FootballPlayer[] players = registeredPlayers.getPlayers();
+        double sum = 0.0;
+        for (int i = 0; i < registeredPlayers.size(); i++) {
+            sum += getSkillCoefficient()*players[i].getPlayingSkill() + getEmotionCoefficient()*players[i].getEmotion();
+        }
+
+        return sum;
+    }
+
+    @Override
     public void clearStartingEleven() {
         startingEleven.clear();
     }
@@ -96,4 +107,8 @@ public abstract class Team implements ManageableTeam {
 
         this.formation = formation;
     }
+
+    public abstract double getSkillCoefficient();
+
+    public abstract double getEmotionCoefficient();
 }
