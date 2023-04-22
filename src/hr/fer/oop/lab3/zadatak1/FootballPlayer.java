@@ -76,4 +76,12 @@ public class FootballPlayer extends Person {
     public void setPlayingPosition(PlayingPosition playingPosition) {
         this.playingPosition = playingPosition;
     }
+
+    @Override
+    public String toString() {
+        return "{" + getName() +
+               ", playingSkill=" + playingSkill +
+               ", playingPosition=" + playingPosition +
+               '}';
+    }
 }

@@ -103,4 +103,13 @@ public abstract class Person {
     public int hashCode() {
         return Objects.hash(name, country);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", emotion=" + emotion +
+                '}';
+    }
 }

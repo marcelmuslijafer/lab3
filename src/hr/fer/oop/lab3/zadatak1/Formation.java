@@ -27,6 +27,11 @@ public class Formation {
         return fw;
     }
 
+    @Override
+    public String toString() {
+        return df + "-" + mf + "-" + fw;
+    }
+
     /**
      * 4-4-2 formation
      */
@@ -41,6 +46,11 @@ public class Formation {
      * 5-4-1 formation
      */
     private static final Formation f541 = new Formation(5, 4, 1);
+
+    /**
+     * 4-5-1 formation
+     */
+    private static final Formation f451 = new Formation(4, 5, 1);
 
     /**
      * @return the 4-4-2 formation
@@ -62,4 +72,9 @@ public class Formation {
     public static Formation F541() {
         return f541;
     }
+
+    /**
+     * @return the 4-5-1 formation
+     */
+    public static Formation F451() { return f451; }
 }

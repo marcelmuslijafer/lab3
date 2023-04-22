@@ -148,4 +148,13 @@ public class Coach extends Person implements Manager {
     public void setFormation(Formation formation) {
         this.formation = formation;
     }
+
+    @Override
+    public String toString() {
+        return "Coach{" +
+                "coachingSkill=" + coachingSkill +
+                ", formation=" + formation +
+                ", managingTeam=" + managingTeam +
+                '}';
+    }
 }

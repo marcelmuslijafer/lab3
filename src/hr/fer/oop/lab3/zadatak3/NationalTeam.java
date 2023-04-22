@@ -65,7 +65,7 @@ public class NationalTeam extends Team {
 
     @Override
     public double getSkillCoefficient() {
-        return RATING_SKILL_COEFFICIENT
+        return RATING_SKILL_COEFFICIENT;
     }
 
     @Override
