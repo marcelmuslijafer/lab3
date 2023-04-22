@@ -17,8 +17,9 @@ public interface Manager {
      * to play in the team's formation. For example, if the formation
      * is 4-4-2, the starting eleven must have a goalkeeper, 4 defenders,
      * 4 midfielders and 2 attackers.
+     * @throws NotEnoughPlayersForPositionException if there is not enough players for all the positions
      */
-    void pickStartingEleven();
+    void pickStartingEleven() throws NotEnoughPlayersForPositionException;
 
     /**
      * Sets the manager's team.

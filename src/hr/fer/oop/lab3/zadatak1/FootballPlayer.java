@@ -52,12 +52,12 @@ public class FootballPlayer extends Person {
 
     /**
      * Sets the player's skill.
-     * @param playingSkill player's skill, must be in [0, 100]
+     * @param playingSkill player's skill
+     * @throws IllegalArgumentException if playing skill is not in [0, 100]
      */
     public void setPlayingSkill(int playingSkill) {
         if (playingSkill < 0 || playingSkill > 100) {
-            System.out.println("Cannot set playing skill to: " + playingSkill);
-            return;
+            throw new IllegalArgumentException("Cannot set playing skill to: " + playingSkill);
         }
         this.playingSkill = playingSkill;
     }

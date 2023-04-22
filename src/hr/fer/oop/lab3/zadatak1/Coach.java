@@ -4,6 +4,7 @@ import hr.fer.oop.lab3.zadatak2.SimpleFootballPlayerCollection;
 import hr.fer.oop.lab3.zadatak2.SimpleFootballPlayerCollectionImpl;
 import hr.fer.oop.lab3.zadatak3.ManageableTeam;
 import hr.fer.oop.lab3.zadatak4.Manager;
+import hr.fer.oop.lab3.zadatak4.NotEnoughPlayersForPositionException;
 
 /**
  * Class that describes a coach.
@@ -78,22 +79,17 @@ public class Coach extends Person implements Manager {
             }
         }
 
-        String format = "Not enough %s in the team to play " + teamFormation + ".";
         if (goalkeepers.size() < goalkeepers.getMaxSize()) {
-            System.out.printf(format, "goalkeepers");
-            return;
+            throw new NotEnoughPlayersForPositionException("Not enough players for position: " + PlayingPosition.GK);
         }
         if (defenders.size() < defenders.getMaxSize()) {
-            System.out.printf(format, "defenders");
-            return;
+            throw new NotEnoughPlayersForPositionException("Not enough players for position: " + PlayingPosition.DF);
         }
         if (midfielders.size() < midfielders.getMaxSize()) {
-            System.out.printf(format, "midfielders");
-            return;
+            throw new NotEnoughPlayersForPositionException("Not enough players for position: " + PlayingPosition.MF);
         }
         if (forwards.size() < forwards.getMaxSize()) {
-            System.out.printf(format, "forwards");
-            return;
+            throw new NotEnoughPlayersForPositionException("Not enough players for position: " + PlayingPosition.FW);
         }
 
         managingTeam.getStartingEleven().clear();
@@ -128,12 +124,12 @@ public class Coach extends Person implements Manager {
 
     /**
      * Sets the coach's skill.
-     * @param coachingSkill skill value, must be in [0, 100]
+     * @param coachingSkill skill value
+     * @throws IllegalArgumentException if coaching skill is not in [0, 100]
      */
     public void setCoachingSkill(int coachingSkill) {
         if (coachingSkill < 0 || coachingSkill > 100) {
-            System.out.println("Cannot set coaching skill to: " + coachingSkill);
-            return;
+            throw new IllegalArgumentException("Cannot set coaching skill to: " + coachingSkill);
         }
         this.coachingSkill = coachingSkill;
     }

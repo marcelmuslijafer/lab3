@@ -1,6 +1,6 @@
-package hr.fer.oop.lab3;
+package hr.fer.oop.lab3.zadatak5;
 
-public class Lab3Test {
+public class Test {
     public static void main(String[] args) {
 
     }

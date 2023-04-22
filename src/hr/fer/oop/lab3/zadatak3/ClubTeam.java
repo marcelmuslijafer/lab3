@@ -90,12 +90,12 @@ public class ClubTeam extends Team {
 
     /**
      * Sets the club's reputation.
-     * @param reputation reputation value, must be in [0, 100]
+     * @param reputation reputation value
+     * @throws IllegalArgumentException if reputation is not in [0, 100]
      */
     public void setReputation(int reputation) {
         if (reputation < 0 || reputation > 100) {
-            System.out.println("Cannot set reputation to: " + reputation);
-            return;
+            throw new IllegalArgumentException("Cannot set reputation to: " + reputation);
         }
         this.reputation = reputation;
     }

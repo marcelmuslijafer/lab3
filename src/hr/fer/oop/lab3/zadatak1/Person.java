@@ -70,12 +70,12 @@ public abstract class Person {
 
     /**
      * Sets the person's emotion
-     * @param emotion emotion value, must be in [0, 100]
+     * @param emotion emotion value
+     * @throws IllegalArgumentException if emotion is not in [0, 100]
      */
     public void setEmotion(int emotion) {
         if (emotion < 0 || emotion > 100) {
-            System.out.println("Cannot set emotion to value: " + emotion);
-            return;
+            throw new IllegalArgumentException("Cannot set emotion to: " + emotion);
         }
         this.emotion = emotion;
     }
